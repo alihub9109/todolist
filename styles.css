@@ -1,0 +1,108 @@
+/* Basic styles remain the same */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;  /* Ensure the body takes the full height of the screen */
+    background-color: #f4f4f4; /* Optional: add a background color */
+  }
+  
+  .container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px 20px;
+      max-width: 90%;  /* make the container 90% of the screen width */
+    }
+  
+    input[type="text"] {
+      font-size: 14px;  /* smaller text for smaller screens */
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 14px;  /* adjust button size */
+      padding: 8px 12px;
+    }
+  
+    li {
+      font-size: 14px;  /* smaller text size for tasks */
+      padding: 8px;  /* reduce padding */
+    }
+  }
+  
+  /* For very small screens like mobile (less than 480px wide) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 22px;  /* smaller heading */
+    }
+  
+    .input-section {
+      flex-direction: column;  /* Stack the input and button vertically */
+      gap: 5px;  /* smaller gap between input and button */
+    }
+  
+    input[type="text"], button {
+      width: 100%;  /* Make both input and button take full width */
+    }
+  }
+  
